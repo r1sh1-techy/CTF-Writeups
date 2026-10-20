@@ -2,6 +2,7 @@
 >this one is pretty straightforward
 
 ### Wireshark
+![wireshark](https://github.com/r1sh1-techy/CTF-Writeups/blob/ed56981c12551ce4219191bee2158594fa64515a/H7CTF%202026%20/Low%20and%20Slow/wireshark.png)
 
 I opened ```capture.pcap``` in Wireshark to inspect the captured traffic.
 
@@ -25,11 +26,11 @@ The relevant query labels were:
 01mi4dmy3dg43tozru
 02gi3geoldgb6q
 ```
-Yup, these are definitely base 32 strings.If you notice this anomaly repeats itself in the following dns traffic.
+Yup, those are definitely base 32 strings.If you notice ,this anomaly repeats itself in the following dns traffic.
 
 ### Flag with Cyberchef
-
-I used CyberChef to decode the strings with the From Base32 operation after removing the prefixes 00,01,02.
+![flag](https://github.com/r1sh1-techy/CTF-Writeups/blob/ed56981c12551ce4219191bee2158594fa64515a/H7CTF%202026%20/Low%20and%20Slow/flag2.png)
+I used CyberChef to decode the strings with the ``From Base32`` operation after removing the prefixes 00,01,02.
 
 Flag found:
 ```
