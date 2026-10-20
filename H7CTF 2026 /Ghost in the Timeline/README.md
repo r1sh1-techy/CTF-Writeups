@@ -1,4 +1,7 @@
-# Ghost in the Timeline 
+# Ghost in the Timeline #
+### Procedure
+![terminal](https://github.com/r1sh1-techy/CTF-Writeups/blob/242efebdebb1fd14d5fadbca2976b28bcd4aa247/H7CTF%202026%20/Ghost%20in%20the%20Timeline/terminal.png)
+
 I started by checking the file type:
 
 ```
@@ -56,7 +59,11 @@ Then inspected its contents:
 ```
 cat secret.txt
 ```
+### Flag
+
 The file contained an exfiltration manifest and a recovery token.
+
+![flag](https://github.com/r1sh1-techy/CTF-Writeups/blob/242efebdebb1fd14d5fadbca2976b28bcd4aa247/H7CTF%202026%20/Ghost%20in%20the%20Timeline/flag.png)
 
 Flag found:
 ```
