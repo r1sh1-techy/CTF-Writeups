@@ -2,6 +2,9 @@
 >this one was damn hard ngl and its 4:30 am rn :3
 
 ### Inspectrum
+
+![inspectrum](https://github.com/r1sh1-techy/CTF-Writeups/blob/3763cc0371213f148f96812e37da97b20a5abbb7/H7CTF%202026%20/Radio%20Silence/inspectrum.png)
+
 I opened the ``.cf32`` file in Inspectrum and set the sample rate to 1MHz as given.
 
 By examining the signal's spectrum and frequency transitions, I identified two distinct frequency levels. 
@@ -33,7 +36,12 @@ After identifying the symbol timing and reading the transmitted data, I obtained
 01100011 00110110 00110000 00110010
 01100110 00110101 01111101
 ```
+
 Once the payload had been extracted as binary data, I used CyberChef to convert it into readable ASCII text.
+
+
+![flag](https://github.com/r1sh1-techy/CTF-Writeups/blob/3763cc0371213f148f96812e37da97b20a5abbb7/H7CTF%202026%20/Radio%20Silence/flag3.png)
+
 Flag found:
 ```
 H7CTF{b38888fd-c2bd-41cd-b3cc-3cf88dc602f5}
